@@ -228,5 +228,44 @@
             &lt;/style&gt;
         </div>
     </div>
+    <hr>
+    <h2>Links HTML - Criar favoritos</h2>
+    <p>Links HTML podem ser usados para criar favoritos, para que os leitores possam ir para partes especificas de uma pagina web.</p>
+    <h3>Criar um favorito em HTML</h3>
+    <p>Os marcadores podem ser úteis se uma página da web for muito longa.</p>
+    <p>Para criar um marcador - primeiro crie o favorito e depois adicione um link para isso.</p>
+    <p>Quando o link é clicado, a página desce ou sobe até o local com o Favorito.</p>
+    <div>
+        <h4>Exemplo</h4>
+        <p>Primeiro, use o atributo <i>id</i> para criar um favorito</p>
+        <div>
+            <pre><code>
+                &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>Depois, adicione um link para o favorito (Um link para pular pro chapter 4), dentro da mesma pagina:</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;a href="#C4"&gt;Subir até o capitulo 4&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>Voce tambem pode adicionar um link para um favorito em outra página:</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;a href="html_demo.html#C4"&gt;Pule para o capitulo 4&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h3>Resumo do capitulo</h3>
+    <ul>
+        <li>Use o atributo <i>id</i> (id="valor") para definir favoritos em uma página</li>
+        <li>Use o atributo <i>href</i> (href="#valor") para linkar ao favorito</li>
+    </ul>
 </body>
 </html>
