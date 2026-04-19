@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos HTML</title>
+</head>
+<body>
+    <h1>Atributos HTML</h1>
+    <ul>
+        <li>Todos os elementos HTML podem ter atributos</li>
+        <li>Atributos fornecem informações adicionais sobre elementos</li>
+        <li>Os atributos são sempre especificados na tag inicial</li>
+        <li>Atributos geralmente vêm em pares nome/valor como: name="value"</li>
+    </ul>
+    <!--Atributo href-->
+    <h2>O atributo href</h2>
+    <p>A tag &lt;a&gt; define um hiperlink. O atributo <i>href</i> especifica a URL da página que o link vai</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;a href="https://www.w3schools.com"&gt;Visite W3Schools&lt;/a&gt;
+        </code></pre>
+    </div>
+    <!--Atributo src-->
+    <h2>O atributo src</h2>
+    <p>A tag &lt;img&gt; é usada para incorporar uma imagem em uma página HTML. O atributo <i>src</i> especifica o caminho até a imagem a ser exibida</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;img src="img_girl.jpg"&gt;
+        </code></pre>
+    </div>
+    <p>Existem duas maneiras de especificar a URL do atributo <i>src</i></p>
+    <ol>
+        <li><strong>URL absoluta -</strong> Links para uma imagem externa hospedada em outro site. <br> Exemplo: <i>src="https://www.w3schools.com/images/img_girl.jpg"</i></li>
+        <li><strong>URL relativa -</strong> Links para uma imagem interna, hospedada dentro de sua maquina. Aqui a URL não inclui o nome de domínio. Se a URL começar sem barra, será relativa a página atual. <br> Exemplo: <i>src="img_girl.jpg"</i>. <br> Se a URL começar com barra, ela será relativa ao dominio. <br> Exemplo: <i>src="/images/img_girl.jpg</i>.</li>
+    </ol>
+    <p><strong>NOTAS:</strong> Imagens externas podem estar protegidas por direitos autorais. Se você fizer e não conseguir permissão para usá-la, voce pode estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens externas; pode ser removido de repente ou mudado.</p>
+    <!--Atributo width e height-->
+    <h2>Os atributos width e height</h2>
+    <p>A tag &lt;img&gt; também pode conter os atributos <i>width</i> e <i>height</i></p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;img src="img_girl.jpg" width="500px" height="600px"&gt;
+        </code></pre>
+    </div>
+    <!--Atributo alt-->
+    <h2>O atributo alternativo (alt)</h2>
+    <p>O atributo <i>alt</i> exigido para a tag &lt;img&gt; especifica um texto alternativo para uma imagem, caso a imagem por algum motivo não possa ser exibida. Isso pode ser devido a uma conexão lenta, ou um erro no atributo <i>src</i>, ou se o usuário usa tela de leitor.</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;
+        </code></pre>
+    </div>
+    <!--Atributo estilo (style)-->
+    <h2>O atributo style</h2>
+    <p>O atributo <i>style</i> é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e mais.</p>
+    <p>Você vai aprender mais sobre estilos em nosso capitulo de <a href="#">Estilos HTML</a>.</p>
+    <!--Atributo lang-->
+    <h2>O atributo lang</h2>
+    <p>Você sempre deve incluir o atributo <i>lang</i> dentro do elemento &lt;html&gt;, para declarar o idioma da página da web. Isso tem como objetivo auxiliar mecanismos de busca e navegadores.</p>
+    <p>O exemplo a seguir especifica o portugues como idioma:</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;body&gt;
+            ...
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </div>
+    <!--Atributo title-->
+    <h2>O atributo title</h2>
+    <p>O atributo <i>title</i> define algumas informações extras sobre um elemento.</p>
+    <p>O valor do atributo <i>title</i> será exibido como uma dica de ferramenta quando passar com o mouse sobre o elemento.</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;p title="I'm a tooltip"&gt;Isto é um paragrafo.&lt;/p&gt;
+        </code></pre>
+    </div>
+    <h2>Resumo do Capítulo</h2>
+    <ul>
+        <li>Todos os elementos HTML podem ter atributos</li>
+        <li>O atributo <i>href</i> de &lt;a&gt; especifica a URL da página para qual o link vai</li>
+        <li>O atributo <i>src</i> de &lt;img&gt; especifica o caminho até a imagem a ser exibida</li>
+        <li>Os atributos <i>width</i> e <i>height</i> de &lt;img&gt; fornecem informações de tamanho para a imagem</li>
+        <li>O atributo <i>alt</i> de &lt;img&gt; fornece um texto alternativo para uma imagem</li>
+        <li>O atributo <i>style</i> é usado para adicionar estilos para um elemento, como cor, fonte, tamanho e mais</li>
+        <li>O atributo <i>lang</i> da etiqueta &lt;html&gt; declara o idioma da página da web</li>
+        <li>O atributo <i>title</i> define algumas extras informações sobre um elemento</li>
+    </ul>
+</body>
+</html>

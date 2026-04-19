@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações HTML</title>
+</head>
+<body>
+    <h1>Elementos de citação em HTML</h1>
+    <p>Neste capítulo, vamos passar pelos elementos HTML <strong>&lt;blockquote&gt;</strong>, <strong>&lt;q&gt;</strong>, <strong>&lt;abbr&gt;</strong>, <strong>&lt;address&gt;</strong>, <strong>&lt;cite&gt;</strong> e <strong>&lt;bdo&gt;</strong></p>
+    <h2>HTML &lt;blockquote&gt; para citações</h2>
+    <p>O elemento HTML &lt;blockquote&gt; define uma seção que é citado de outra fonte.</p>
+    <p>Os navegadores geralmente recuam elementos &lt;blockquote&gt;</p>
+    <p>Here is a quote from WWF's website:</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;p&gt;Aqui está uma citação do site da WWF:&lt;/p&gt;
+            &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+            &lt;/blockquote&gt;
+        </code></pre>
+        <h3>visual:</h3>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+    </div>
+    <h2>HTML &lt;q&gt; para citações curtas</h2>
+    <p>A tag HTML &lt;q&gt; define uma citação curta.</p>
+    <p>Os navegadores normalmente inserem aspas ao redor da aspas (&lt;q&gt;).</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature&lt;/q&gt;.&lt;/p&gt;
+        </code></pre>
+    </div>
+    <h2>HTML &lt;abbr&gt; para abreviações</h2>
+    <p>A tag HTML &lt;abbr&gt; define uma abreviação ou sigla, como <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr> e <abbr title="Hypertext Preprocessor">PHP</abbr></p>
+    <p>Marcação de abreviações pode fornecer informações úteis para navegadores, tradução sistemas e mecanismos de busca.</p>
+    <p>Use o atributo global <i>title</i> para mostrar a descrição para a sigla quando você passa o mouse sobre o elemento.</p>
+    <div>
+        <h3>Exemplo</h3>
+        <pre><code>
+            &lt;p&gt;O &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; foi fundado em 1948.&lt;p&gt;
+        </code></pre>
+    </div>
+    <h2>HTML &lt;address&gt; para informações de contato</h2>
+    <p>A tag HTML &lt;address&gt; define as informações de contato do autor/proprietario de um documento ou artigo</p>
+    <p>As informações de contato podem ser um endereço de e-mail, URL, endereço fisico, telefone, redes sociais, etc.</p>
+    <p>O texto no elemento &lt;address&gt; geralmente é renderizado em <i>itálico</i>, e os navegadores também adiciona uma quebra de linha antes e depois do elemento &lt;address&gt;.</p>
+    <div>
+        <h3>Exemplo</h3>
+        <pre><code>
+            &lt;address&gt;
+            Written by John Doe.&lt;br&gt;
+            Visit us at:&lt;br&gt;
+            Example.com&lt;br&gt;
+            Box 564, Disneyland&lt;br&gt;
+            USA
+            &lt;/address&gt;
+        </code></pre>
+        <h3>Visual:</h3>
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+    </div>
+    <h2>HTML &lt;cite&gt; para o titulo da obra</h2>
+    <p>A tag HTML &lt;cite&gt; define o título de uma obra criativa (por exemplo, um livro, um poema, uma musica, um filme, uma pintura, uma escultura, etc.).</p>
+    <p><strong>NOTA:</strong> O nome de uma pessoa não é o titulo da obra.</p>
+    <p>O texto no elemento &lt;cite&gt; geralmente é renderizado em italico.</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;p&gt;
+        </code></pre>
+    </div>
+    <h2>HTML &lt;bdo&gt; para Bi-Directional Override</h2>
+    <p>BOD significa Bi-Direcional Override.</p>
+    <p>A tag HTML &lt;bdo&gt; é usada para sobrescrever a direção atual do texto:</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;bdo dir="rtl"&gt;This texto will be written from right to left&lt;/bdo&gt;
+        </code></pre>
+    </div>
+    <hr>
+    <h2>Comentários em HTML</h2>
+    <p>Comentários em HTML não são exibidos no navegador, mas podem ajudar a documentar seu código fonte HTML.</p>
+    <h3>Tag de comentário HTML</h3>
+    <p>Voce pode adicionar comentarios a sua fonte usando a seguinte sintaxe:</p>
+    <div>
+        <h4>Exemplo:</h4>
+        <pre><code>
+            &lt;!--Escreva seu comentario aqui--&gt;
+        </code></pre>
+    </div>
+    <p>Note que há um ponto de exclamação (!) na tag inicial, mas não no fim da etiqueta</p>
+    <p>Com os comentários, voce pode colocar notificações e lembretes no seu código HTML</p>
+</body>
+</html>

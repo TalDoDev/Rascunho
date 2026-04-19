@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Cores HTML</h1>
+        <p>A cores HTML são especificadas com nomes de cores pre definidas, ou com valores RGB, HEX, HSL, RGBA ou HSLA</p>
+        <h2>Nomes das cores</h2>
+        <p>Em HTML, uma cor pode ser especificada usando um nome de cor</p>
+
+        <nav>
+
+        </nav>
+    </header>
+    <div style="display: flex; background-color: beige;">
+        <div style="border: 1px solid black;">
+            <div style="background-color: tomato;">
+                <p style="color: white;">Tomato</p>
+            </div>
+            <div style="background-color: dodgerblue;">
+                <p style="color: white;">DodgerBlue</p>
+            </div>
+            <div style="background-color: gray;">
+                <p style="color: white;">Gray</p>
+            </div>
+            <div style="background-color: violet;">
+                <p style="color: white;">Violet</p>
+            </div>
+        </div>
+
+        <div>
+            <div style="background-color: orange;">
+                <p style="color: white;">Orange</p>
+            </div>
+            <div style="background-color: mediumseagreen;">
+                <p style="color: white;">MediumSeaGreen</p>
+            </div>
+            <div style="background-color: slateblue;">
+                <p style="color: white;">SlateBlue</p>
+            </div>
+            <div style="background-color: lightgray;">
+                <p style="color: black;">Lightgray</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Cor de fundo</h2>
+    <p>Você pode definir a cor de fundo dos elementos HTML</p>
+    <div>
+        <h3>Exemplo</h3>
+        <pre><code>
+            &lt;h1 style="background-color:DodgerBlue;"&gt;Olá Mundo&lt;/h1&gt;
+            &lt;p style="background-color:Tomato;"&gt;Lorem...&lt;/p&gt;
+        </code></pre>
+    </div>
+
+    <h2>Cor do texto</h2>
+    <p>Voce pode definir a cor do texto:</p>
+    <div>
+        <h3>Exemplo</h3>
+        <pre><code>
+            &lt;h1 style="color:Tomato;"&gt;Olá Mundo&lt;/h1&gt;
+            &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;
+            &lt;p style="color:MediumSeaGreen;"&gt;Lorem ipsum...&lt;/p&gt;
+        </code></pre>
+    </div>
+
+    <h2>Cor da borda</h2>
+    <p>Voce pode definir a cor das bordas:</p>
+    <div>
+        <h3>Exemplo</h3>
+        <pre><code>
+            &lt;h1 style="border:2px solid tomato;"&gt;Hello world&lt;/h1&gt;
+            &lt;h1 style="border:2px solid Dodgerblue;"&gt;Hello World&lt;/h1&gt;
+            &lt;h1 style="border:2px solid violet;"&gt;Hello World&lt;/h1&gt;
+        </code></pre>
+    </div>
+
+    <h2>Valores de cor</h2>
+    <p>Em HTML, as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL, valores RGBA e valores HSLA.</p>
+    <p>Os três elementos &lt;div&gt; seguintes têm cor de fundo definida com valores RGB, HEX e HSL:</p>
+    <div style="background-color: rgb(255, 99, 71); width: 90vw; height: 30px; text-align: center; color: white; font-family: 'Courier New', Courier, monospace; font-size: 2vw; font-weight: bolder;">
+        <p>RGB(255, 99, 71)</p>
+    </div>
+    <div style="background-color: #ff6347; width: 90vw; height: 30px; text-align: center; color: white; font-family: 'Courier New', Courier, monospace; font-size: 2vw; font-weight: bolder;">
+        <p>#ff6347</p>
+    </div>
+    <div style="background-color: hsl(9, 100%, 64%); width: 90vw; height: 30px; text-align: center; color: white; font-family: 'Courier New', Courier, monospace; font-size: 2vw; font-weight: bolder;">
+        <p>HSL(9, 100%, 64%)</p>
+    </div>
+    <p>Os dois elementos &lt;div&gt; seguintes têm a cor de fundo definida com valores RGBA e valores HSLA, que adicionam um canal Alpha a cor (aqui temos 50% de transparência)</p>
+    <div style="background-color: rgba(255, 99, 71, 0.5); width: 90vw; height: 30px; text-align: center; color: white; font-family: 'Courier New', Courier, monospace; font-size: 2vw; font-weight: bolder;">
+        <p>RGBA (255,99, 71, 0.5)</p>
+    </div>
+    <div style="background-color: hsla(9, 100%, 64%, 0.5); width: 90vw; height: 30px; text-align: center; color: white; font-family: 'Courier New', Courier, monospace; font-size: 2vw; font-weight: bolder;">
+        <p>HSLA (9, 100%, 64%, 0.5)</p>
+    </div>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;h1 style="background-color: rgb(255, 99, 71);"&gt;...&lt;/h1&gt;
+            &lt;h1 style="background-color: #ff6347"&gt;...&lt;/h1&gt;
+            &lt;h1 style="background-color: hsl(9, 100%, 64%)"&gt;...&lt;/h1&gt;
+
+            &lt;h1 style="background-color: rgba(255, 99, 71, 0.5)"&gt;...&lt;/h1&gt;
+            &lt;h1 style="background-color: hsla(9, 100%, 64%, 0.5)"&gt;...&lt;/h1&gt;
+        </code></pre>
+    </div>
+    <hr>
+    <h2>Valores de cores RGB</h2>
+    <p>Em HTML, uma cor pode ser especificada com um valor RGB, usando esta formula: <br> <strong>RGB (red, green, blue)</strong></p>
+    <p>Cada parâmetro (vermelho, verde, azul) define a intensidade da cor com valor entre 0 e 255.</p>
+    <p>Por exemplo, rgb(255, 0, 0) é exibido como vermelho, porque o vermelho está definido para seu valor mais alto (255), e os outros dois (verde e azul) são definido para 0.</p>
+    <p>Outro exemplo, rgb (0, 255, 0) é exibido em verde, porque verde está definido para seu valor mais alto (255), e os outros dois (vermelho e azul) são definidos para 0.</p>
+    <p>Para exibir preto, defina todos os parâmetros de cor para 0, assim: <br> <strong>rgb(0, 0, 0)</strong></p>
+    <p>Para exibir branco, defina todos os parâmetros de cor para 255, como: <br> <strong>rgb(255, 255, 255)</strong></p>
+    <div>
+        <h3>Exemplo:</h3>
+        <div style="display: flex;">
+            <div style="color: white;">
+                <p style="padding: 5px; background-color: rgb(255, 0, 0);">RGB(255, 0, 0)</p>
+                <p style="padding: 5px; background-color: rgb(60, 179, 113);">RGB(60, 179, 113)</p>
+                <p style="padding: 5px; background-color: rgb(255, 165, 0);">RGB(255, 165, 0)</p>
+            </div>
+
+            <div style="color: white;">
+                <p style="padding: 5px; background-color: rgb(0, 0, 255);">RGB(0, 0, 255)</p>
+                <p style="padding: 5px; background-color: rgb(238, 130, 238);">RGB(238, 130, 238)</p>
+                <p style="padding: 5px; background-color: rgb(106, 90, 205);">RGB(106, 90, 205)</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Tons de cinza</h2>
+    <p>Tons de cinza são frequentemente definidos usando valores iguais para os três parâmetros:</p>
+    <div style="background-color: beige; width: 50vw; padding: 5px; border: 1px solid black;">
+        <h3 style="text-align: center;">Exemplo:</h3>
+        <div style="display: flex; background-color: white;">
+            <div style="color: white; font-family: 'Courier New', Courier, monospace; font-weight: bolder; font-size: 1.5vw; text-align: center; margin: 0px auto;">
+                <p style="background-color: rgb(60, 60, 60); padding: 2px;">RGB(60, 60, 60)</p>
+                <p style="background-color: rgb(140, 140, 140); padding: 2px;">RGB(140, 140, 140)</p>
+                <p style="background-color: rgb(200, 200, 200); color: black; padding: 2px;">RGB(200, 200, 200)</p>
+            </div>
+            
+            <div style="color: white; font-family: 'Courier New', Courier, monospace; font-weight: bolder; font-size: 1.5vw; text-align: center; margin: 0px auto;">
+                <p style="background-color: rgb(100, 100, 100); padding: 2px;">RGB(100, 100, 100)</p>
+                <p style="background-color: rgb(180, 180, 180); padding: 2px;">RGB(180, 180, 180)</p>
+                <p style="background-color: rgb(240, 240, 240); color: black; padding: 2px;">RGB(240, 240, 240)</p>
+            </div>
+        </div>
+    </div>
+    <h2>Valores de cor RGBA</h2>
+    <p>Valores de cor RGBA são uma extensão dos valores de cor RGB com um canal Alpha - que especifica a opacidade de uma cor.</p>
+    <p>Um valor de cor RGBA é especificado com: <br> <strong>RGBA(red, green, blue, alpha)</strong></p>
+    <p>O parâmetro alfa é um número entre 0.0(totalmente transparente) e 1.0(nada transparente)</p>
+    <div style="background-color: beige; width: 50vw; padding: 5px; border: 1px solid black;">
+        <h3 style="text-align: center;">Exemplo:</h3>
+        <div style="display: flex; background-color: white; margin: 0px auto;">
+            <div style="margin: 0px auto; font-family: 'Courier New', Courier, monospace; font-weight: bolder; font-size: 1.5vw;">
+                <p style="background-color: rgba(255, 99, 71, 0); padding: 2px;">rgba(255, 99, 71, 0)</p>
+                <p style="background-color: rgba(255, 99, 71, 0.4); padding: 2px;">rgba(255, 99, 71, 0.4)</p>
+                <p style="background-color: rgba(255, 99, 71, 0.8); padding: 2px;">rgba(255, 99, 71, 0.8)</p>
+            </div>
+
+            <div style="margin: 0px auto; font-family: 'Courier New', Courier, monospace; font-weight: bolder; font-size: 1.5vw;">
+                <p style="background-color: rgba(255, 99, 71, 0.2); padding: 2px;">rgba(255, 99, 71, 0.2)</p>
+                <p style="background-color: rgba(255, 99, 71, 0.6); padding: 2px;">rgba(255, 99, 71, 0.6)</p>
+                <p style="background-color: rgba(255, 99, 71, 1); padding: 2px;">rgba(255, 99, 71, 1)</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Valores de cor HEX</h2>
+    <p>Uma cor hexadecimal é especificada com: #RRGGBB, onde o RR (red), GG (green) e BB (blue) inteiros hexadecimais especificam os componetes da cor. São valores hexadecimais entre 00 e ff (igual aos decimais de 0 a 255).</p>
+    <p>Por exemplo, #ff0000 é exibido como vermelho, porque o vermelho é definido para seu valor mais alto (ff), e os outros dois (verde e azul) estão definidos para 00.</p>
+    <p>Outro exemplo, #00ff00 é exibido como verde, porque verde é definido para seu valor mais alto (ff), e os outros dois (vermelho e azul) são ajustados para 00.</p>
+    <p>Para exibir preto, defina todos os parâmetros de for para 00, como isto: #000000.</p>
+    <p>Para exibir branco, defina todos os parâmetros de cor para ff, como isto: #ffffff</p>
+    <div style="background-color: beige; width: 50vw; padding: 5px; border: 1px solid black; margin: 0px auto;">
+        <h3 style="text-align: center;">Exemplo</h3>
+        <div style="display: flex; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 1.5vw; margin: 4px;">
+            <div style="margin: 0px auto;">
+                <p style="background-color: #ff0000; padding: 5px 55px; margin: 2px;">#ff0000</p>
+                <p style="background-color: #3cb371; padding: 5px 55px; margin: 2px;">#3cb371</p>
+                <p style="background-color: #ffa500; padding: 5px 55px;margin: 2px;">#ffa500</p>
+            </div>
+
+            <div style="margin: 0px auto;">
+                <p style="background-color: #0000ff; padding: 5px 55px; margin: 2px;">#0000ff</p>
+                <p style="background-color: #ee82ee; padding: 5px 55px; margin: 2px;">#ee82ee</p>
+                <p style="background-color: #6a5acd; padding: 5px 55px; margin: 2px;">#6a5acd</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Tons de cinza</h2>
+    <p>Tons de cinza são frequentemente definidos usando valores iguais para os três parametros.</p>
+    <div style="background-color: beige; width: 50vw; padding: 5px; border: 1px solid black; font-family: 'Courier New', Courier, monospace; font-size: 1.5vw; font-weight: bold; margin: 0px auto;">
+        <h3 style="text-align: center;">Exemplo:</h3>
+        <div style="display: flex; background-color: white;">
+            <div style="margin: 0px auto;">
+                <p style="background-color: #404040; color: white; padding: 5px 55px; margin: 2px;">#404040</p>
+                <p style="background-color: #a0a0a0; color: white; padding: 5px 55px; margin: 2px;">#a0a0a0</p>
+                <p style="background-color: #dcdcdc; padding: 5px 55px; margin: 2px;">#dcdcdc</p>
+            </div>
+            <div style="margin: 0px auto;">
+                <p style="background-color: #686868; color: white;padding: 5px 55px; margin: 2px;">#686868</p>
+                <p style="background-color: #bebebe; color: white; padding: 5px 55px; margin: 2px;">#bebebe</p>
+                <p style="background-color: #f8f8f8; padding: 5px 55px; margin: 2px;">#f8f8f8</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Cores HSL e HSLA</h2>
+    <p>HSL significa Hue, Saturation and Lightness (matiz, saturação e clareza)</p>
+    <p>Os valores de cor HSLA são uma extensão do HSL com um canal alfa (opacidade)</p>
+    <p>Em HTML,  uma cor pode ser especificada usando matiz, saturação e clareza (HSL): <br><strong>HSL (matiz, saturação, clareza)</strong></p>
+    <p>Hue é um grau na roda colorida de 0 a 360, 0 é vemelho, 120 é verde e 240 é azul.</p>
+    <p>Saturação é um valor percentual, 0% significa umtom de cinza, e 100% é a cor completa.</p>
+    <p>A leveza também é um valor percentual, 0% é preto e 100% é branco.</p>
+    <div style="background-color: beige; width: 70vw; font-family: 'Courier New', Courier, monospace; font-size: 1.5vw; font-weight: bold; margin: 0px auto; padding: 1.5vw;">
+        <h3>Exemplo:</h3>
+        <div style="display: flex; background-color: white; color: white; padding: 1vw;">
+            <div style="margin: 0px auto;">
+                <p style="background-color: hsl(0, 100%, 50%); padding: 5px 55px; margin: 2px;">HSL(0, 100%, 50%)</p>
+                <p style="background-color: hsl(147, 100%, 47%); padding: 5px 55px; margin: 2px;">HSL(147, 50%, 47%)</p>
+                <p style="background-color: hsl(39, 100%, 50%); padding: 5px 55px; margin: 2px;">HSL(39, 100%, 50%)</p>
+            </div>
+            <div style="margin: 0px auto;">
+                <p style="background-color: hsl(240, 100%, 50%); padding: 5px 55px; margin: 2px;">HSL(240, 100%, 50%)</p>
+                <p style="background-color: hsl(300, 76%, 72%); padding: 5px 55px; margin: 2px;">HSL(300, 76%, 72%)</p>
+                <p style="background-color: hsl(248, 53%, 58%); padding: 5px 55px; margin: 2px;">HSL(248, 53%, 58%)</p>
+            </div>
+        </div>
+    </div>
+    <h3>Saturação</h3>
+    <p>Saturação pode ser descrita como a intensidade de uma cor.</p>
+    <p>100% é cor pura, sem tons de cinza.</p>
+    <p>50% é 50% cinza, mas ainda dá para ver a cor.</p>
+    <p>0% é completamente cinza, você não consegue mais ver a cor.</p>
+    <div style="background-color: beige; padding: 1vw; margin: 0px auto; width: 70vw; font-size: 2.5vw;">
+        <h4>Exemplo:</h4>
+        <div style="display: flex; background-color: white; font-family: 'Courier New', Courier, monospace; font-size: 1.5vw; font-weight: bold; padding: 0.5vw; margin: 0px auto; text-align: center;">
+            <div style="margin: 0px auto; width: 50%; padding: 0.2vw;">
+                <p style="background-color: hsl(0, 100%, 50%);">HSL(0, 100%, 50%)</p>
+                <p style="background-color: hsl(0, 60%, 50%);">HSL(0, 60%, 50%)</p>
+                <p style="background-color: hsl(0, 20%, 50%);">HSL(0, 20%, 50%)</p>
+            </div>
+            <div style="margin: 0px auto; width: 50%; padding: 0.2vw;">
+                <p style="background-color: hsl(0, 80%, 50%);">HSL(0, 80%, 50%)</p>
+                <p style="background-color: hsl(0, 40%, 50%);">HSL(0, 40%, 50%)</p>
+                <p style="background-color: hsl(0, 0%, 50%);">HSL(0, 0%, 50%)</p>
+            </div>
+        </div>
+    </div>
+    <h3>Leveza</h3>
+    <p>A claridade de uma cor pode ser descrita como a quantidade de luz que voce quer dar à cor, onde 0% significa sem luz (preto), 50% significa 50% claro (nem escuro nem claro), e 100% significa clareza total (branco).</p>
+    <div style="background-color: beige; margin: 0px auto; width: 70vw; padding: 0.5vw; font-size: 2.5vw;">
+        <h4>Exemplo:</h4>
+        <div style="display: flex; background-color: white; padding: 1vw; font-family: 'Courier New', Courier, monospace; font-size: 1.5vw; font-weight: bold; text-align: center; margin: 0px auto;">
+            <div style="margin: 0px auto; width: 50%; padding: 0.2vw;">
+                <p style="background-color: hsl(0, 100%, 0%); color: white;">HSL(0, 100%, 0%)</p>
+                <p style="background-color: hsl(0, 100%, 50%); color: white;">HSL(0, 100%, 50%)</p>
+                <p style="background-color: hsl(0, 100%, 90%);">HSL(0, 100%, 90%)</p>
+            </div>
+            <div style="margin: 0px auto; width: 50%; padding: 0.2vw;">
+                <p style="background-color: hsl(0, 100%, 25%); color: white;">HSL(0, 100%, 25%)</p>
+                <p style="background-color: hsl(0, 100%, 75%); color: white;">HSL(0, 100%, 75%)</p>
+                <p style="background-color: hsl(0, 100%, 100%);">HSL(0, 100%, 100%)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h3>Tons de cinza</h3>
+    <p>Tons de cinza são frequentemente definidos ajustando o matiz e a saturação em 0, e ajustando a clareza de 0% para 100% para obter tons mais escuros/claros:</p>
+    <div style="background-color: beige; margin: 0px auto; width: 70vw; font-size: 2.5vw; padding: 0.5vw;">
+        <h4 style="text-align: center;">Exemplo:</h4>
+        <div style="display: flex; background-color: white; font-family: 'Courier New', Courier, monospace; font-size: 1.5vw; font-weight: bold;">
+            <div style="margin: 0px auto; color: white; width: 50%; padding: 0.2vw; text-align: center;">
+                <p style="background-color: hsl(0, 0%, 20%);">HSL(0, 0%, 20%)</p>
+                <p style="background-color: hsl(0, 0%, 40%);">HSL(0, 0%, 40%)</p>
+                <p style="background-color: hsl(0, 0%, 70%); color: black;">HSL(0, 0%, 70&)</p>
+            </div>
+            <div style="margin: 0px auto; width: 50%; padding: 0.2vw; text-align: center; color: white;">
+                <p style="background-color: hsl(0, 0%, 30%);">HSL(0, 0%, 30%)</p>
+                <p style="background-color: hsl(0, 0%, 60%);">HSL(0, 0%, 60%)</p>
+                <p style="color: black; background-color: hsl(0, 0%, 90%);">HSL(0, 0%, 90%)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h2>Valores de cor HSLA</h2>
+    <p>Os valores de cor HSLA são uma extensão dos valores de cor HSL, com um canal alfa (opacidade) de uma cor.</p>
+    <p>Um valor de cor HSLA é especificado com: <br><strong>HSLA(matiz, saturação, clareza, alfa)</strong></p>
+    <p>O parâmetro alfa é um numero entre 0.0 (totalmente transparente) e 1.0 (nada transparente):</p>
+    <div style="background-color: beige; width: 70vw; font-size: 2.5vw; padding: 0.5vw; margin: 0px auto;">
+        <h3 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Exemplo:</h3>
+        <div style="display: flex; background-color: white; margin: 0px auto; padding: 0.2vw; font-family: Arial, Helvetica, sans-serif; font-size: 1.5vw; font-weight: bold;">
+            <div style="margin: 0px auto; width: 50%; padding: 0.2vw; text-align: center;">
+                <p style="background-color: hsla(9, 100%, 64%, 0);">HSLA(9, 100%, 64%, 0)</p>
+                <p style="background-color: hsla(9, 100%, 64%, 0.4);">HSLA(9, 100%, 64%, 0.4)</p>
+                <p style="background-color: hsla(9, 100%, 64%, 0.8);">HSLA(9, 100%, 64%, 0.8)</p>
+            </div>
+            <div style="margin: 0px auto; padding: 0.2vw; text-align: center; width: 50%;">
+                <p style="background-color: hsla(9, 100%, 64%, 0.2);">HSLA(9, 100%, 64%, 0.2)</p>
+                <p style="background-color: hsla(9, 100%, 64%, 0.6);">HSLA(9, 100%, 64%, 0.6)</p>
+                <p style="background-color: hsla(9, 100%, 64%, 1);">HSLA(9, 100%, 64%, 1)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

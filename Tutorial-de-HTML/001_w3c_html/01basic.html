@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Básicos de HTML</title>
+</head>
+<body>
+    <h1>Exemplos Básicos de HTML</h1>
+    <p>Neste capítulo, mostraremos alguns exemplos básicos de HTML</p>
+    <p>Não se preocupe se usarmos etiquetas que você ainda não conhece.</p>
+    <h2>Documentos HTML</h2>
+    <p>Todos os documentos HTML devem começar com uma declaração do tipo de documento: &lt;!DOCTYPE html&gt;</p>
+    <p>O próprio documento HTML começa com &lt;html&gt; e termina com &lt;/html&gt;</p>
+    <p>A parte visível do documento HTML está entre &lt;body&gt; e &lt;/body&gt;</p>
+    <div>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Titulo principal&lt;/h1&gt;
+                &lt;p&gt;Conteúdo do parágrafo&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </div>
+
+    <hr>
+
+    <!--Títulos HTML-->
+    <section>
+        <h2>Títulos HTML</h2>
+        <p>Os títulos HTML são definidos com as tags &lt;h1&gt; até &lt;h6&gt;</p>
+        <p>&lth1&gt; Define o título mais importante. <br> &lt;h6&gt; Define o título menos importante</p>
+        <div>
+            <h3>Exemplo:</h3>
+            <pre><code>
+                &lt;h1&gt;Titulo 1&lt:/h1&gt;
+                &lt;h2&gt;Titulo 2&lt:/h2&gt;
+                &lt;h3&gt;Titulo 3&lt:/h3&gt;
+                &lt;h4&gt;Titulo 4&lt:/h4&gt;
+                &lt;h5&gt;Titulo 5&lt:/h5&gt;
+                &lt;h6&gt;Titulo 6&lt:/h6&gt;
+            </code></pre>
+        </div>
+        <p><strong>NOTA:</strong> Os navegadores automaticamente adicionam algum espaço em branco (uma margem) antes e depois de um titulo.</p>
+        <h2>Os títulos são importantes</h2>
+        <p>Os mecanismos de busca usam os títulos para indexar a estrutura e o conteúdo das suas páginas web.</p>
+        <p>Os usuarios frequentemente folheiam uma página pelos títulos. É importante usar títulos para mostrar a estrutura do documento.</p>
+        <p>Títulos &lt;h1&gt; devem ser usados para títulos principais, seguidos pelos titulos &lt;h2&gt;, depois pelos menos importantes &lt;h3&gt;, e assim por diante. Até chegar no titulo &lt;h6&gt;</p>
+        <p>Por exemplo:</p>
+        <ul>
+            <li>&lt;h1&gt; - Título da página</li>
+            <li>&lt;h2&gt; - Titulo de seções</li>
+            <li>&lt;h3&gt; - Subseções</li>
+            <li>...</li>
+        </ul>
+        <div>
+            <h3>Exemplo:</h3>
+            <pre><code>
+                &lt;h1&gt;Travel Guide&lt;/h1&gt;
+
+                &lt;h2&gt;Europe&lt;/h2&gt;
+                &lt;h3&gt;France&lt;/h3&gt;
+                &lt;h3&gt;Italy&lt;h3&gt;
+                
+                &lt;h2&gt;Asia&lt;/h2&gt;
+                &lt;h3&gt;India&lt;/h3&gt;
+                &lt;h3&gt;Thailand&lt;/h3&gt;
+            </code></pre>
+        </div>
+        <p><strong>DICA:</strong> Use apenas um &lt;h1&gt; por página - ele representa o tema ou titulo principal</p>
+        <p><strong>NOTA:</strong> Use títulos HTML apenas para títulos. Não use titulos para deixar o texto grande ou em negrito.</p>
+        <h2>Títulos maiores</h2>
+        <p>Cada título HTML tem um tamanho padrão. No entanto, você pode especificar o tamanho de qualquer titulo com o atributo <i>style</i> usando a propriedade CSS <i>font-size</i></p>
+        <div>
+            <h3>Exemplo:</h3>
+            <pre><code>
+                &lt;h1 style="font-size::60px;"&gt;Titulo 1&lt;/h1&gt;
+            </code></pre>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--Parágrafos HTML-->
+    <section>
+        <h2>Parágrafos HTML</h2>
+        <p>Parágrafos HTML são definidos com a tag <strong>&lt;p&gt;</strong></p>
+        <p>Um parágrafo sempre começa em uma nova linha, e os navegadores automaticamente adicionam algum espaço em branco (uma margem) antes e depois de um paragrafo.</p>
+        <h2>O problema do poema</h2>
+        <p>Este poema será exibido em uma única linha:</p>
+        <div>
+            <h3>Exemplo</h3>
+            <pre><code>
+                &lt;p&gt;
+                    My Bonnie lies over the ocean.
+
+                    My Bonnie lies over the sea.
+
+                    My Bonnie lies over the ocean.
+
+                    Oh, bring back my Bonnie to me.
+                &lt;/p&gt;
+            </code></pre>
+        </div>
+    <h3>Solução - O elemento HTML &lt;pre&gt;</h3>
+    <p>O elemento HTML &lt;pre&gt; define um texto pré-formatado.</p>
+    <p>O texto dentro de um elemento é exibido em uma fonte de largura fixa (geralmente Courier), e preserva tanto os espaços quanto as quebras de linha:</p>
+        <div>
+            <h3>Exemplo:</h3>
+            <pre><code>
+                &lt;pre&gt;
+                    My Bonnie lies over the ocean.
+
+                    My Bonnie lies over the sea.
+
+                    My Bonnie lies over the ocean.
+
+                    Oh, bring back my Bonnie to me.
+                &lt;/pre&gt;
+            </code></pre>
+        </div>
+    </section>
+    <!--Tags Vazias-->
+    <section>
+        <h2>Tags Vazias</h2>
+        <h3>Regras Horizontais HTML</h3>
+        <p>A tag &lt;hr&gt; define uma quebra temática em uma página HTML e é mais frequentemente exibido como uma regra horizontal.</p>
+        <p>A tag &lt;hr&gt; é uma tag vazia, o que significa que não tem tag final.</p>
+
+        <h3>Quebras de Linha HTML</h3>
+        <p>O elemento HTML &lt;br&gt; define uma quebra de linha.</p>
+        <p>Use &lt;br&gt; se quiser uma quebra de linha (uma linha nova) sem começar um novo parágrafo.</p>
+        <p>A tag &lt;br&gt; é uma tag vazia, o que significa que não tem tag final.</p>
+    </section>
+    <hr>
+    <!--Formatação de Texto HTML-->
+    <section>
+        <h2>Formatação de Texto HTML</h2>
+        <p>O HTML contém vários elementos para definir texto com um significado especial.</p>
+        <h3>Elementos de Formatação HTML</h3>
+        <p>Os elementos de formatação foram projetados para exibir tipos especiais de texto:</p>
+        <ul>
+            <li><b>&lt;b&gt; -</b> <b>Texto em negrito</b></li>
+            <li><b>&lt;strong&gt; -</b> <strong>Texto importante</strong></li>
+            <li><b>&lt;i&gt; -</b> <i>Texto itálico</i></li>
+            <li><b>&lt;em&gt; -</b> <em>Texto enfatizado (enfase)</em></li>
+            <li><b>&lt;mark&gt; -</b> <mark>Texto marcado</mark></li>
+            <li><b>&lt;small&gt; -</b> <small>Texto menor</small></li>
+            <li><b>&lt;del&gt; -</b> <del>Texto excluido</del></li>
+            <li><b>&lt;ins&gt; -</b> <ins>Texto inserido</ins></li>
+            <li><b>&lt;sub&gt; -</b> Texto <sub>subíndice</sub></li>
+            <li><b>&lt;sup&gt; -</b> Texto <sup>sobrescrito</sup></li>
+        </ul>
+        <h3>Elementos HTML &lt;b&gt; e &lt;strong&gt;</h3>
+        <p>O elemento HTML &lt;b&gt; define um texto em negrito, sem importância extra.</p>
+        <p>O elemento HTML &lt;strong&gt; define o texto com grande importância. O conteúdo interno geralmente é exibido em negrito.</p>
+
+        <h3>Elementos HTML &lt;i&gt; e &lt;em&gt;</h3>
+        <p>O elemento HTML &lt;i&gt; é frequentemente usada para indicar um termo técnico, uma frase de outro idioma, um pensamento, um nome, etc.... O conteúdo interno normalmente é exibido em Itálico</p>
+        <p>O elemento HTML &lt;em&gt; define enfase no texto. O conteudo interno normalmente tambem é exibido em itálico.</p>
+        <p><strong>DICA:</strong> Um leitor de tela pronuncia palavras com ênfase, usando acensão verbal.</p>
+        <h3>Elemento HTML &lt;small&gt;</h3>
+        <p>O elemento HTML &lt;small&gt; define um texto menor</p>
+        <div>
+            <h4>Exemplo</h4>
+            <pre><code>
+                &lt;small&gt;Este é um texto menor!&lt;/small&gt;
+            </code></pre>
+        </div>
+
+        <h3>Elemento HTML &lt;mark&gt;</h3>
+        <p>O elemento HTML <strong>&lt;mark&gt;</strong> define o texto que devem ser <mark>marcados</mark> ou <mark>destacados</mark></p>
+        <div>
+            <h4>Exemplo:</h4>
+            <pre><code>
+                &lt;p&gt;Não se esqueça de comprar &lt;mark&gt;leite&lt;/mark&gt; hoje&lt;/p&gt;
+            </code></pre>
+        </div>
+
+        <h3>Elemento HTML &lt;del&gt;</h3>
+        <p>O elemento HTML &lt;del&gt; define o texto <del>isso foi excluido</del> de um documento. Os navegadores geralmente encontram uma linha através do texto deletado.</p>
+        <div>
+            <h4>Exemplo</h4>
+            <pre><code>
+                &lt;p&gt;Minha cor favorita é &lt;del&gt;azul&lt;/del&gt; vermelha.&lt;/p&gt;
+            </code></pre>
+        </div>
+
+        <h3>Elemento HTML &lt;ins&gt;</h3>
+        <p>O elemento HTML &lt;ins&gt; define um texto que foi inserido em um documento. Os navegadores geralmente sublinham a inserção do texto</p>
+        <div>
+            <h4>Exemplo</h4>
+            <pre><code>
+                &lt;p&gt;Minha cor favorita é &lt;del&gt;azul&lt;/del&gt; &lt;ins&gt;vermelha&lt;/ins&gt;.&lt;/p&gt;
+            </code></pre>
+        </div>
+
+        <h3>Elemento HTML &lt;sub&gt;</h3>
+        <p>O elemento HTML &lt;sub&gt; define um texto subscrito. O texto subíndice aparece meio caractere abaixo da linha normal, e às veses é renderizada em fonte menor. Texto subscrito pode ser usado para fórmulas químics, como H<sub>2</sub>O</p>
+        <div>
+            <h4>Exemplo:</h4>
+            <pre><code>
+                &lt;p&gt;Formula quimica da agua H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+            </code></pre>
+        </div>
+
+        <h3>Elemento HTML &lt;sup&gt;</h3>
+        <p>O elemento HTML &lt;sup&gt; define o texto em excepício. O texto em sobrescrito aparece meio caractere acima da linha normal, e às vezes é renderizada em uma fonte menor. Texto sobrescrito pode ser usado para notas de rodapé, como WWW<sup>1</sup></p>
+        <div>
+            <h4>Exemplo</h4>
+            <pre><code>
+                &lt;p&gt;Isto é um paragrafo com texto &lt;sup&gt;sobrescrito&lt;/sup&gt;&lt;/p&gt;
+            </code></pre>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--Links HTML-->
+    <section>
+        <h2>Links HTML</h2>
+        <p>Links são definidos com a tag <strong>&lt;a&gt;</strong></p>
+        <div>
+            <h3>Exemplo:</h3>
+            <pre><code>
+                &lt;a href="https://www.w3schools.com"&gt;Este é um link.&lt;/a&gt;
+            </code></pre>
+        </div>
+        <p>O destino do link é especificado no atributo <strong>href</strong></p>
+        <p>Atributos são usados para fornecer informações adicionais sobre elementos HTML.</p>
+    </section>
+
+    <hr>
+
+    <!--Imagens HTML-->
+    <section>
+        <h2>Imagens HTML</h2>
+        <p>Imagens HTML são definidas com a tag <strong>&lt;img&gt;</strong>.</p>
+        <p>O arquivo fonte src(), texto alternativo alt(), width e height são fornecidos como atributos.</p>
+        <div>
+            <h3>Exemplo</h3>
+            <pre><code>
+                &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;
+            </code></pre>
+        </div>
+    </section>
+</body>
+</html>

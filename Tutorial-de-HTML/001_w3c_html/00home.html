@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de HTML5</title>
+</head>
+<body>
+    <header>
+        <h1>Tutorial de HTML</h1>
+        <h2>Aprenda HTML</h2>
+        <p>HTML é a linguagem padrão de marcação para páginas Web.</p>
+        <p>Com HTML, você pode criar seu próprio site.</p>
+    </header>
+
+    <main>
+        <h1>Introdução ao HTML</h1>
+        <h2>O que é HTML?</h2>
+        <ul>
+            <li>HTML significa Linguagem de Marcação de HiperTexto</li>
+            <li>HTML é a linguagem padrão de marcação para criar páginas Web</li>
+            <li>HTML descreve a estrutura de uma página Web</li>
+            <li>HTML consiste em uma série de elementos</li>
+            <li>Elementos HTML indicam ao navegador como exibir o conteúdo</li>
+            <li>Elementos HTML rotulam pedaços de conteúdo como "este é um título", "isto é um parágrafo", "este é um link", etc...</li>
+        </ul>
+        <h2>Um documento HTML simples</h2>
+        <div>
+            <h3>Exemplo</h3>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title&gt;Titulo da pagina&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Este é um titulo&lt;/h1&gt;
+                    &lt;p&gt;Isto é um parágrafo&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </div>
+        <h3>Exemplo explicado</h3>
+        <ul>
+            <li>A declaração <strong>&lt;!DOCTYPE html&gt;</strong> define que este documento é um documento HTML5</li>
+            <li>O elemento <strong>&lt;html&gt;</strong> é o elemento raiz de uma página HTML</li>
+            <li>O elemento <strong>&lt;head&gt;</strong> contém metainformações sobre a página HTML</li>
+            <li>O elemento <strong>&lt;title&gt;</strong> especifica um título para a página HTML (que é mostrado na barra de título do navegador ou na aba da página)</li>
+            <li>O elemento <strong>&lt;body&gt;</strong> é o contêiner para todos os conteúdos visíveis, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc...</li>
+            <li>O elemento <strong>&lt;h1&gt;</strong> define um título grande</li>
+            <li>O elemento <strong>&lt;p&gt;</strong> define um parágrafo</li>
+        </ul>
+        <h2>O que é um elemento HTML?</h2>
+        <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final:</p>
+        <p><strong>&lt;TagInicial&gt;</strong>O conteúdo vai aqui...<strong>&lt;/TagFinal&gt;</strong></p>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag Inicial</th>
+                        <th>Conteúdo do Elemento</th>
+                        <th>Tag Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>Conteúdo do titulo</td>
+                        <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Conteúdo do parágrafo</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td><i>none</i></td>
+                        <td><i>none</i></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <p><strong>NOTA:</strong> Alguns elementos HTML não têm conteúdo (como o &lt;br&gt;). Esses elementos são chamados de elementos vazios. Elementos vazios não têm tag final!</p>
+            </div>
+        </div>
+        <!--Elementos HTML-->
+        <h2>Elementos HTML aninhados</h2>
+        <p>Elementos HTML podem ser aninhados (isso significa que elementos podem conter outros elementos).</p>
+        <p>Todos os documentos HTML consistem em elementos HTML aninhados.</p>
+        <p>O exemplo a seguir contém quatro elementos HTML (&lt;html&gt;, &lt;body&gt;, &lt;h1&gt; e &lt;p&gt;)</p>
+        <div>
+            <h3>Exemplo</h3>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Este é um titulo&lt;/h1&gt;
+                    &lt;p&gt;Isto é um parágrafo&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </div>
+        <h3>Exemplo eplicado</h3>
+        <ul>
+            <li>O elemento <strong>&lt;html&gt;</strong> é o elemento raiz e define todo o documento HTML</li>
+            <li>Ele tem uma tag de início &lt;html&gt; e uma tag de fim &lt;/html&gt;</li>
+            <li>Então, dentro do elemento &lt;html&gt; há um elemento &lt;body&gt;</li>
+            <li>O elemento &lt;body&gt; define o corpo do documento</li>
+            <li>Ele tem uma tag de inicio &lt;body&gt; e uma tag de fim &lt;/body&gt;</li>
+            <li>Então, dentro do elemento &lt;body&gt; ali são outros dois elementos &lt;h1&gt; e &lt;p&gt;</li>
+            <li>O elemento &lt;h1&gt; define um titulo</li>
+            <li>Ele possui uma tag de início &lt;h1&gt; e uma tag de fim &lt;/h1&gt;</li>
+            <li>O elemento &lt;p&gt; define um parágrafo</li>
+            <li>Ele possui uma tag de início &lt;p&gt; e uma tag de fim &lt;/p&gt;</li>
+        </ul>
+        <h2>Elementos HTML vazios</h2>
+        <p>Elementos HTML sem conteúdo são chamados de elementos vazios.</p>
+        <p>A tag &lt;br&gt; define uma quebra de linha, e é um elemento vazio sem uma tag de fim</p>
+        <div>
+            <h3>Exemplo</h3>
+            <pre><code>
+                &lt;p&gt;Isto é um paragrafo &lt;br&gt; com uma quebra de linha&lt;/p&gt;
+            </code></pre>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos HTML - CSS</title>
+</head>
+<body>
+    <h1>Estilos HTML - CSS</h1>
+    <h2>Folhas de Estilo em Cascata</h2>
+    <p>CSS significa Cascading Style Sheets(folhas de Estilo em Cascata).</p>
+    <p>CSS econimiza muito trabalho. Ele pode controlar o layout de múltiplas páginas da web todas ao mesmo tempo.</p>
+    <h2>O que é CSS?</h2>
+    <p>Folhas de Estilo em Cascata (CSS) são usadas para formatar o layout de uma página web.</p>
+    <p>Com CSS, você pode controlar a cor, a fonte, o tamanho do texto, o espaçamento entre os elementos, como os elementos são posicionados e dispostos, qual contexto imagens ou cores de fundo devem ser usadas, com diferentes displays para dispositivos diferentes e tamanhos de tela, e muito mais.</p>
+    <h2>Usando CSS</h2>
+    <p>O CSS pode ser adicionado a documentos HTML de 3 maneiras:</p>
+    <ol>
+        <li><strong>Inline - </strong>Usando o atributo <i>style</i> dentro dos elementos HTML</li>
+        <li><strong>Interno - </strong>Usando um elemento &lt;style&gt; na seção &lt;head&gt;</li>
+        <li><strong>Externo - </strong>Usando um elemento &lt;link&gt; para vincular a um arquivo CSS</li>
+    </ol>
+    <p>A forma mais comum de adicionar CSS é manter os estilos em CSS em arquivos externos.</p>
+    <p>No entanto, neste tutorial vamos usar estilos inline e interno, porque isso é mais fácil de demonstrar, e é mais facil para voce tentar sozinho.</p>
+    <h3>Inline CSS</h3>
+    <p>Um CSS inline é usado para aplicar um estilo único a um único elemento HTML.</p>
+    <p>Um CSS inline usa o atributo <i>style</i> dentro de um elemento HTML.</p>
+    <p>O exemplo a seguir define a cor do texto do elemento &lt;h1&gt; para azul, e a cor do texto do elemento &lt;p&gt; para vermelho:</p>
+    <div>
+        <h4>Exemplo:</h4>
+        <div>
+            <pre><code>
+                &lt;h1 style="color: blue;"&gt;Um titulo em azul&lt;/h1&gt;
+                &lt;p style="color: red;"&gt;Um parágrafo em vermelho&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h3>CSS interno</h3>
+    <p>Um CSS interno é usado para definir um estilo para uma única página HTML.</p>
+    <p>Um CSS interno &lt;style&gt; é definido na seção de uma página HTML, dentro de um elemento &lt;head&gt;</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;style&gt;
+                    body {
+                        background-color: powderblue;
+                        color: beige;
+                    }
+                    h1 {
+                        font-family: Arial;
+                        color: blue;
+                    }
+                    p {
+                        color: red;
+                    }
+                    ...
+                &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Titulo...&lt;/h1&gt;
+                    &lt;p&gt;Lorem...&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h3>CSS Externo</h3>
+    <p>Uma folha de estilo externa é usada para definir o estilo de muitas páginas HTML.</p>
+    <p>Para usar uma folha de estilo externa, adicione um link para ela na seção &lt;head&gt; de cada página HTML:</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Titulo...&lt;/h1&gt;
+                    &lt;p&gt;Lorem...&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>A folha de estilo externa pode ser escrita em qualquer editor de texto, O arquivo não deve conter nenhum código HTML, e deve ser salvo com uma extensão .css.</p>
+    <p>Aqui está como é o arquivo "<i>styles.css</i>"</p>
+    <div>
+        <h4>Styles.css</h4>
+        <div>
+            <pre><code>
+                @charset "UTF-8";
+                body {
+                    background-color: powderblue;
+                }
+                h1 {
+                    color: blue;
+                }
+                p {
+                    color: red;
+                }
+            </code></pre>
+        </div>
+    </div>
+    <hr>
+    <h2>Cores, Fontes e Tamanhos CSS</h2>
+    <p>Aqui, vamos demonstrar algumas propriedades CSS muito usadas.</p>
+    <p>A propriedade CSS <i>color</i> define a cor do texto a ser utilizada.</p>
+    <p>A propriedade CSS <i>font-family</i> define a fonte a se usada.</p>
+    <p>A propriedade CSS <i>font-size</i> define o tamanho do texto a ser utilizada.</p>
+    <div>
+        <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Exemplo</h3>
+        <p style="font-family: 'Courier New', Courier, monospace;">Uso das propriedades CSS <i>color</i>, <i>font-family</i> e <i>font-size</i>.</p>
+        <div>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;head&gt;
+                &lt;style&gt;
+                    h1 {
+                        color: blue;
+                        font-family: verdana;
+                        font-size: 300%;
+                    }
+                    p {
+                        color: red;
+                        font-family: courier;
+                        font-size: 160%;
+                    }
+                &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;Titulo&lt;/h1&gt;
+                &lt;p&gt;Lorem...&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </div>
+    </div>
+    <hr>
+    <h2>CSS Border</h2>
+    <p>A propriedade CSS <i>border</i> define uma borda em torno de um elemento HTML.</p>
+    <div style="border: 1px solid black;">
+        <h3>Exemplo</h3>
+        <p>Uso da propriedade CSS <i>border</i>.</p>
+        <div>
+            <pre><code>
+                p {
+                    border: 2px solid black;
+                }
+            </code></pre>
+        </div>
+    </div>
+    <h2>Preenchimento CSS</h2>
+    <p>A propriedade CSS <i>padding</i> define um preenchimento (espaço) entre o texto e a borda.</p>
+    <div style="border: 1px solid black; padding: 30px; background-color: beige;">
+        <h3>Exemplo</h3>
+        <p>Uso da propriedade CSS <i>border</i>.</p>
+        <div>
+            <pre><code>
+                p {
+                    border: 1px solid black;
+                    padding: 30px;
+                }
+            </code></pre>
+        </div>
+    </div>
+    <h2>Margem CSS</h2>
+    <p>A propriedade CSS <i>margin</i> define uma margem (espaço) fora da bordar</p>
+    <div style="border: 1px solid black; margin: 50px; background-color: beige;">
+        <h3>Exemplo</h3>
+        <p>Uso da propriedade CSS <i>border</i>.</p>
+        <div>
+            <pre><code>
+                p {
+                    border: 1px solid black;
+                    margin: 50px;
+                }
+            </code></pre>
+        </div>
+    </div>
+    <hr>
+    <h2>Folhas para CSS externo</h2>
+    <p>Folhas de estilo externas podem ser referenciadas com uma URL completa ou com um camilho relativo a pagina web atual.</p>
+    <div>
+        <h3>Exemplo 1:</h3>
+        <p>Este exemplo usa uma URL completa para linkar a uma folha de estilos.</p>
+        <div>
+            <pre><code>
+                &lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <div>
+        <h3>Exemplo 2:</h3>
+        <p>Este exemplo faz link para uma folha de estilo localizada na pasta html do site atual.</p>
+        <div>
+            <pre><code>
+                &lt;link rel="stylesheet" href="/html/styles.css"&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <div>
+        <h3>Exemplo 3:</h3>
+        <p>Este exemplo faz link para uma folha de estilo localizada na mesma pasta da página atual.</p>
+        <div>
+            <pre><code>
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            </code></pre>
+        </div>
+    </div>
+    <hr>
+    <h2>Resumo do capítulo</h2>
+    <ul>
+        <li>Use o atributo HTML <i>style</i> para estilo inline</li>
+        <li>Use o elemento HTML <strong>&lt;style&gt;</strong> para definir CSS interno</li>
+        <li>Use o elemento HTML &lt;link&gt; para se referir a um arquivo CSS externo</li>
+        <li>Use o elemento HTML &lt;head&gt; para armazenar elementos &lt;style&gt; e &lt;link&gt;</li>
+        <li>Use a propriedade CSS <i>color</i> para cores de texto</li>
+        <li>Use a propriedade CSS <i>font-family</i> para fontes de texto</li>
+        <li>Use a propriedade CSS <i>font-size</i> para tamanhos de texto</li>
+        <li>Use a propriedade CSS <i>border</i> para bordas</li>
+        <li>Use a propriedade CSS <i>padding</i> para o espaço dentro da borda</li>
+        <li>Use a propriedade CSS <i>margin</i> para espaço fora da borda</li>
+    </ul>
+</body>
+</html>
