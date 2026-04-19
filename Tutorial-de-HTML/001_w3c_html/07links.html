@@ -4,8 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links HTML</title>
+    <style>
+        a#buton_link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Links HTML - Hiperlinks</h1>
+    <h1>Links HTML</h1>
+    <p>Links estão presentes em quase todas as páginas da web. Links permitem que os usuarios cliquem de página em página.</p>
+    <h2>Links HTML - Hiperlinks</h2>
+    <p>Links HTML são hiperlinks.</p>
+    <p>Você pode clicar em um link e pular para outro documento.</p>
+    <p><strong>NOTA:</strong> Um link não precisa ser texto. Um link pode ser uma imagem ou qualquer outro elemento HTML!</p>
+    <h3>Links HTML - Sintaxe</h3>
+    <p>A tag HTML &lt;a&gt; define um hiperlink. Possui a seguinte sintaxe:</p>
+    <div>
+        <div>
+            <pre><code>
+                &lta href="url"&gt;Conteudo do link&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>O atributo mais importante do elemento &lt;a&gt; é o atributo <i>href</i>, que indica o destino do link.</p>
+    <p>O texto do link é a parte que ficava visivel para o leito.</p>
+    <p>Clicar no texto do link, o leitor será redirecionado para o endereço URL especificado.</p>
+    <div>
+        <h4>Exemplo</h4>
+        <p>Este exemplo mostra como criar um link para W3Schools.com!</p>
+        <div>
+            <pre><code>
+                &lt;a href="https://www.w3schools.com/"&gt;Visite W3Schools!&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>Por padrão, os links aparecerão da seguinte forma em todos os navegadores:</p>
+    <ul>
+        <li>Um link não visitado está sublinhado e azul</li>
+        <li>Um link visitado está sublinhado e roxo</li>
+        <li>Um link ativo é sublinhado e vermelho</li>
+    </ul>
+    <h3>Links HTML - O atributo Alvo(target)</h3>
+    <p>Por padrão, a página vinculada será exibida na janela atuaç do navegador. Para mudar isso. voce deve especificar outro alvo para o link.</p>
+    <p>O atributo <i>target</i> especifica onde abrir o documento vinculado</p>
+    <p>O atributo <i>target</i> pode ter um dos seguintes valores:</p>
+    <ul>
+        <li><strong>_self -</strong> Padrão. Abre o documento na mesma janela/aba em que foi clicada</li>
+        <li><strong>_blank -</strong> Abre o documento em uma nova janela ou aba</li>
+        <li><strong>_parent -</strong> Abre o documento no frame pai</li>
+        <li><strong>_top</strong> Abre o documento no corpo inteiro da janela</li>
+    </ul>
+    <div>
+        <h4>Exemplo</h4>
+        <p>Use target="_blank" para abrir o documento vinculado em uma nova janela ou aba do navegador:</p>
+        <div>
+            <pre><code>
+                &lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visite W3Schools!&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h3>URLs absolutas vs. URLs relativas</h3>
+    <p>Ambos os exemplo acima usam uma URL absoluta (um endereço web completo) no atributo <i>href</i></p>
+    <p>Um link local (um link para uma pagina dentro do mesmo site) é especificado com uma URL relativa (sem a parte do "https://www..."):</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;h2&gt;URL Absoluta&lt;/h2&gt;
+                &lt;p&gt;&lt;a href="https://www.w3.org/"&gt;W3C&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+                &lt;h2&gt;URL Relativa&lt;/h2&gt;
+                &lt;p&gt;&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a href="/css/default.aasp"&gt;CSS Tutorial&lt;/a&gt;&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h3>Links HTML - Use imagens como link</h3>
+    <p>Para usar uma imagem como link, basta colocar a tag &lt;img&gt; dentro da tag &lt;a&gt;</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;a href="default.asp"&gt;
+                &lt;img src="smiley.gif" alt="HTML tutorial" style="width: 42px; height: 42px;"&gt;
+                &lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h3>Links para um endereço de E-mail</h3>
+    <p>Use dentro do atributo <i>href</i> para criar um link que abra o programa de e-mail do usuario <i>mailto</i> (para que eles enviem um novo email):</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;a href="mailto: someone@example.com"&gt;Send email&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h3>Botão como Link</h3>
+    <p>Para usar um botão HTML como link, voce precisa adicionar um pouco de código JavaScript.</p>
+    <p>O JavaScript permite que voce especifique o que acontece em certos eventos, como um clique em um botão:</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h3>Titulos de Link</h3>
+    <p>O atributo <i>title</i> especifica informações extras sobre um elemento. A informação é mais frequentemente mostrada como um texto de dica quando o mouse passa sobre o elemento.</p>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            <pre><code>
+                &lt;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"&gt;Visit our HTML Tutorial&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h3>Mais sobre URLs Absolutas e URLs Relativas</h3>
+    <div>
+        <h4>Exemplo 1</h4>
+        <p>Use uma URL completa para linkar para uma página web:</p>
+        <div>
+            &lt;a href="https://www.w3schools.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
+        </div>
+    </div>
+    <div>
+        <h4>Exemplo 2</h4>
+        <p>Link para uma página localizada na pasta html do site atual:</p>
+        <div>
+            <pre><code>
+                &lt;a href="/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <div>
+        <h4>Exemplo 3</h4>
+        <p>Link para uma página localizada na mesma pasta da página atual:</p>
+        <div>
+            <pre><code>
+                &lt;a href="default.asp"&gt;HTML Tutorial&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h2>Resumo do Capítulo</h2>
+    <ul>
+        <li>Use o elemento &lt;a&gt; para definir um link</li>
+        <li>Use o atributo <i>href</i> para definir o endereço do link</li>
+        <li>Use o atributo <i>target</i> para definir onde abrir o documento vinculado</li>
+        <li>Use o elemento &lt;img&gt; (dentro de &lt;a&gt;) para usar uma imagem como link</li>
+        <li>Use o esquema <i>mailto:</i> dentro do atributo <i>href</i> para criar um link que abra o programa de e-mail do usuario</li>
+    </ul>
+    <hr>
+    <h2>Links HTMK - Cores diferentes</h2>
+    <p>Um link HTML é exibido em uma cor diferente dependendo se já foi visitado, não visitado ou ativo</p>
+    <h3>Cores do link HTML</h3>
+    <p>Por padrão, um link aparecerá assim (em todos os navegadores):</p>
+    <ul>
+        <li>Um link não visitado está sublinhado e azul</li>
+        <li>Um link visitado está sublinhado e roxo</li>
+        <li>Um link ativo é sublinhado e vermelho</li>
+    </ul>
+    <p>Voce pode mudar as cores do estado do link usando CSS:</p>
+    <div style="background-color: rgba(140, 140, 140, 0.13);">
+        <h4>Exemplo</h4>
+        <p>Aqui, um link não visitado será verde, sem sublinhado. Um link visitado será rosa, sem sublinhado. Um link ativo será amarelo e sublinhado. Alem disso, ao passar o mouse sobre um link (a:hover), ele fica vermelho e sublinhado:</p>
+        <div>
+            <pre><code>
+                &lt;style&gt;
+                    a:link {
+                        color: green;
+                        background-color: transparent;
+                        text-decoration: none;
+                    }
+                    a:visited {
+                        color: pink;
+                        background-color: transparent;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: red;
+                        background-color: transparent;
+                        text-decoration: underline;
+                    }
+                    a:active {
+                        color: yellow;
+                        background-color: transparent;
+                        text-decoration: underline;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h3>Botões de enlace</h3>
+    <p>Um link tambem pode ser estilizado como um botao, usando CSS:</p>
+    <a href="#" target="_blank" id="buton_link">Este é um link</a>
+    <div>
+        <h4>Exemplo</h4>
+        <div>
+            &lt;style&gt;
+                a:link, a:visited {
+                    background-color: #f44336;
+                    color: white;
+                    padding: 15px 25px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+                a:hover, a:active {
+                    background-color: red;
+                }
+            &lt/style&gt;
+        </div>
+    </div>
 </body>
 </html>
