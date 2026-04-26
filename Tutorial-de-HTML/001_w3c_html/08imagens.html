@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Imagens HTML</title>
 </head>
 <body>
-    
+    <h1>Imagens HTML</h1>
+    <p>Imagens podem melhorar o design e a aparencia de uma página web.</p>
+    <div>
+        <h2>Exemplo 1</h2>
+        <div>
+            <pre><code>
+                &lt;img src="pic_trulli.jpg" alt="Italian Trulli"&gt;
+            </code></pre>
+        </div>
+    </div>
+    <div>
+        <h2>Exemplo 2</h2>
+        <div>
+            <pre><code>
+                &lt;img src="img_girl.jpg" alt="Girl in a jacket"&gt;
+            </code></pre>
+        </div>
+    </div>
+    <div>
+        <h2>Exemplo 3</h2>
+        <div>
+            <pre><code>
+                &lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h2>Sintaxe de Imagens HTML</h2>
+    <p>A tag HTML &lt;img&gt; é usada para incorporar uma imagem em uma página web.</p>
+    <p>Imagens não são tecnicamente inseridas em uma página web; imagens são vinculadas a páginas web. A etiqueta &lt;img&gt; cria um espaço para a imagem referenciada.</p>
+    <p>A tag &lt;img&gt; está vazia, contém apenas atributos e não tem uma tag de encerramento.</p>
+    <p>A etiqueta &lt;img&gt; exige dois atributos:</p>
+    <ul>
+        <li><strong>src -</strong> Especifica o caminho ate a imagem</li>
+        <li><strong>alt -</strong> Especifica um texto alternativo para a imagem</li>
+    </ul>
+    <div>
+        <h3>Sintaxe</h3>
+        <div>
+            <pre><code>
+                &lt;img src="URL" alt="Texto alternativo"&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h2>o atributo SRC</h2>
+    <p>O atributo exigido <i>src</i> especifica o caminho (URL) para a imagem.</p>
+    <p><strong>NOTA:</strong> Quando uma página web carrega, é o navegador que pega a imagem de um servidor web e a insere na página. Portanto, certifique-se que a imagem realmente permaneça no mesmo lugar em relação para a página da web, caso contrário, seus visitantes receberão um icone de link quebrado. O icone de link quebrado e o texto <i>alt</i> são mostrados caso o navegador não encontre a imagem.</p>
+    <div>
+        <h3>Exemplo</h3>
+        <div>
+            <pre><code>
+                &lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h2>O atributo alternativo (alt)</h2>
+    <p>O atributo <i>alt</i> requerido fornece um texto alternativo para uma imagem, se o usuario por algum motivo não consiga visualizá-lo (por causa da conexão lenta, um erro no SRC ou se o usuario usa um leitor de tela).</p>
+    <p>O valor do atributo <i>alt</i> deve descrever a imagem</p>
+    <div>
+        <h3>Exemplo</h3>
+        <div>
+            <pre><code>
+                &lt;img src="img_chania.jpg" alt="Flowers in chania"&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do atributo <i>alt</i>.</p>
+    <div>
+        <h3>Exemplo</h3>
+        <div>
+            <pre><code>
+                &lt;img src="wrongname.gif" alt="Flowers in Chania">
+            </code></pre>
+        </div>
+    </div>
+    <p><strong>DICA:</strong> Um leitor de tela é um programa de software que lê o codigo HTML e permite ao usuario "escutar" o conteudo. Leitores de tela são uteis para pessoas com deficiencia visual ou com dificuldades de aprendizagem.</p>
+
+    <h2>Tamanho da imagem - Largura e Altura</h2>
+    <p>Voce pode usar o atributo <i>style</i> para especificar a largura e altura de uma imagem.</p>
+    <div>
+        <h3>Exemplo</h3>
+        <div>
+            <pre><code>
+                &lt;img src="img_girl.jpg" alt="Girl in a Jacket" style="width: 500px; height: 600px;"&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>Outra alternativa, é usar os atributos <i>width</i> e <i>height</i></p>
+    <div>
+        <h4>Exemplo</h4>
+        <pre><code>
+            &lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500px" height="600px"&gt;
+        </code></pre>
+    </div>
+    <p>Os atributos <i>width</i> e <i>height</i> sempre definem a largura e altura da imagem em pixels.</p>
+
 </body>
 </html>
