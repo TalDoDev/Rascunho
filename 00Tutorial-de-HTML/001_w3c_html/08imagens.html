@@ -104,5 +104,40 @@
     </div>
     <p>Os atributos <i>width</i> e <i>height</i> sempre definem a largura e altura da imagem em pixels.</p>
 
+    <h2>Largura e altura, ou estilo?</h2>
+    <p>Os atributos <i>width</i>, <i>height</i> e <i>style</i> são todas válidas em HTML.</p>
+    <p>No entanto, sugerimos usar o atributo <i>style</i>. Ele impede que as folhas de estilos mudem o tamanho das imagens</p>
+    <div>
+        <h3>Exemplo</h3>
+        <div>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;style&gt;
+                    img {
+                        width: 100%;
+                    }
+                &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt;
+                    &lt;img src="html5.gif" alt="HTML5 Icon" style="width: 128px; height: 128px;"&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h2>Imagens em outra pasta</h2>
+    <p>Se voce tiver suas imagens em outra subpasta, deve incluir o nome da pasta no atributo <i>src</i></p>
+    <div>
+        <h3>Exemplo</h3>
+        <div>
+            <pre><code>
+                &lt;img src="/imagens/html5.gif" alt="HTML5 Icon" style="width: 128px; height: 128px;"&gt;
+            </code></pre>
+        </div>
+    </div>
 </body>
 </html>
