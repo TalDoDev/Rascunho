@@ -200,5 +200,91 @@
         <li>Use os atributos HTML <strong>width</strong> e <strong>height</strong>, ou, as propriedades CSS <i>width</i> e <i>height</i> para definir o tamanho da imagem</li>
         <li>Use a propriedade CSS <i>float</i> para deixar a imagem flutuar a esqueda ou a direita</li>
     </ul>
+    <hr>
+    <h2>Mapas de Imagens HTML</h2>
+    <p>Com mapas de imagens em HTML, voce pode criar areas clicaveis em uma imagem</p>
+    <h3>Mapas de imagens</h3>
+    <p>A tag HTML &lt;map&gt; define um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicaveis. As areas são definidas com uma ou mais tags &lt;area&gt;</p>
+
+    <img src="../000_0midia/workplace.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="00home.html" alt="Computer">
+        <area shape="rect" coords="290,172,333,250" href="02atributos.html" alt="Phone" target="_blank">
+        <area shape="circle" coords="337,300,44" href="06estilos.html" alt="Coffee" target="_blank">
+    </map>
+    <div>
+        <h4>Exemplo</h4>
+        <p>Aqui está o código-fonte HTML do mapa de imagem acima:</p>
+        <div>
+            <pre><code>
+                &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+                &lt;map name="workmap"&gt;
+                    &lt;area shape="rect" coords="34,44,270,350" href="00home.html" alt="Computer"&gt;
+                    &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+                    &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;
+                &lt;/map&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h3>Como funciona?</h3>
+    <p>A ideia por tras de um mapa de imagem é que voce deve conseguir realizar diferentes performances dependendo de onde voce clicar na imagem.</p>
+    <p>Para criar um mapa de imagem, voce precisa de uma imagem e de algum código HTML que descreva as áreas clicáveis.</p>
+    <h3>A imagem</h3>
+    <p>A imagem é inserida usando tag &lt;img&gt;. A única diferença em relação a outras imagens é que voce deve adicionar um atributo <i>usemap</i></p>
+    <div>
+        <pre><code>
+            &lt;img src="workplace.jpg" alt="workplace" usemap="#workmap"&gt;
+        </code></pre>
+    </div>
+    <p>O valor começa com uma hashtag seguida pelo nome do mapa da imagem, e é usado para criar uma relação entre a imagem e o mapa da imagem</p>
+
+    <h3>Criar mapa de imagem</h3>
+    <p>Depois, adicione um elemento &lt;map&gt;</p>
+    <p>O elemento &lt;map&gt; é usado para criar um mapa de imagem, e é vinculado à imagem usando o atributo obrigatório <i>name</i></p>
+    <div>
+        <pre><code>
+            &lt;map name="workmap"&gt;
+        </code></pre>
+    </div>
+    <p>O atributo <i>name</i> deve ter o mesmo valor que o atributo <i>usemap</i> de &lt;img&gt;</p>
+    <h3>As Áreas</h3>
+    <p>Depois, adicione as áreas clicáveis.</p>
+    <p>Uma área clicavel é definida usando um elemento &lt;area&gt;</p>
+    <h4>Formato</h4>
+    <p>Voce deve definir o formato da area clicavel, e pode escolher um desses valores:</p>
+    <ul>
+        <li>rect - define uma regiao retangular</li>
+        <li>circle - define uma regiao circular</li>
+        <li>poly - define uma regiao poligonal</li>
+        <li>default - define toda a regiao</li>
+    </ul>
+    <p>Voce tambem deve definir algumas coordenadas para poder posicionar a area clicavel a imagem.</p>
+    <h4>Shape="rect"</h4>
+    <p>As coordenadas para <i>shape="rect"</i> vem em pares, uma para o eixo X e outra para o eixo Y.</p>
+    <p>Então, as coordenadas estão localizadas a 34 pixels da margem esquerda e 44 pixel do topo.</p>
+    <p>As outas coordenadas estão localizadas em 270 pixels da margem ESQUERDA e 350 pixels do TOPO.</p>
+    <p>Agopra temos dados suficientes para criar uma areas retangulas cliclavel</p>
+    <div>
+        <h5>Exemplo</h5>
+        <div>
+            <pre><code>
+            &lt;area shape="rect" coords="34, 44, 270, 350" href="computer.html"&gt;
+            </code></pre>
+        </div>
+    </div>
+    <h4>Shape="circle"</h4>
+    <p>Para adicionar uma area circular, primeiro localize as coordenadas do centro do circulo: 337, 300.</p>
+    <p>Então especifique o raio do circulo: 44 pixel.</p>
+    <p>Agora voce tem dados suficiente para criar uma area circular clicavel</p>
+    <div>
+        <h5>Exemplo</h5>
+        <div>
+            <pre><code>
+                &lt;area shape="circle" coords="337, 300, 44" href="coffee.html"&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h4>Shape="poly"</h4>
 </body>
 </html>
