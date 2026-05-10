@@ -286,5 +286,80 @@
     </div>
 
     <h4>Shape="poly"</h4>
+    <p>O <i>shape="poly"</i> contém vários pontos de coordenadas, que criam uma forma formada por linhas retas (um poligono).</p>
+    <p>Isso pode ser usado para criar qualquer forma.</p>
+    <p>Tipo, um croissant!</p>
+    <p>Como podemos fazer o croissant na imagem abaixo virar um link clicável?</p>
+    <img src="../000_0midia/frenchfood.jpg" alt="Croissant">
+    <p>Temos que encontrar as coordenadas X e Y para todas as arestas do croissant:</p>
+    <img src="../000_0midia/frenchfood4.jpg" alt="coordenadas Croissant">
+    <p>As coordenadas vem em pares, uma para o eixo X e a outra para o eixo Y:</p>
+    <div>
+        <h5>Exemplo</h5>
+        <div>
+            <pre><code>
+                &lt;area shape="poly" coords="140, 121, 181, 116, 204, 160, 204, 222, 191, 270, 140, 329, 85, 355, 58, 352, 37, 322, 40, 259, 103, 161, 128, 147" href="croissant.html"&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h3>Mapa de Imagem e JavaScript</h3>
+    <p>Uma área clicavel tambem pode disparar uma função JavaScript.</p>
+    <p>Adicionar um evento <i>click</i> ao elemento &lt;area&gt; para executar uma função JavaScript</p>
+    <div>
+        <h4>Exemplo</h4>
+        <p>Aqui, usamos o atributo onclick para executar uma função JavaScript quando selecionar a area:</p>
+        <div>
+            <pre><code>
+                &lt;map name="workmap"&gt;
+                    &lt;area shape="circle" coords="337, 300, 44" href="coffee.html" onclick="myFunction()"&gt;
+                &lt;/map&gt;
+
+                &lt;script&gt;
+                    function myFunction() {
+                        alert("You clicked the coffee cup!");
+                    }
+                &lt;/script&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h2>Resumo do capitulo</h2>
+    <ul>
+        <li>Use o elemento HTML &lt;map&gt; para definir um mapa de imagem</li>
+        <li>Use o elemento HTML &lt;area&gt; para definir as areas clicaveis no mapa da imagem</li>
+        <li>Use o atributo HTML <i>usemap</i> do elemento &lt;img&gt; para apontar para um mapa de imagem</li>
+    </ul>
+    <hr>
+    <h2>Imagens de fundo HTML</h2>
+    <p>Uma imagem de fundo pode ser especificada para quase todo elemento HTML</p>
+    <h3>Imagem de fundo em um elemento HTML</h3>
+    <p>Para adicionar uma imagem de fundo em um elemento HTML, use o atributo HTML <i>style</i> e a propriedade CSS <i>background-image</i></p>
+    <div>
+        <h3>Exemplo</h3>
+        <p>Adicione uma imagem de fundo em um elemento &lt;p&gt;</p>
+        <div>
+            <pre><code>
+                &lt;p style="background-image: url('img_girl.jpg');"&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>Voce tambem pode especificar a imagem de fundo no elemento &lt;style&gt;, na seção &lt;head&gt;</p>
+    <div>
+        <h3>Exemplo</h3>
+        <p>Especifique a imagem de fundo no elemento &lt;style&gt;</p>
+        <div>
+            <pre><code>
+                &lt;style&gt;
+                    p {
+                        background-image: url('img_girl.jpg');
+                    }
+                &lt;/style&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h3>Imagem de fundo em uma pagina</h3>
+    <p>Se voce quer que a pagina inteira tenha uma imagem de fundo, precisa especificar a imagem de fundo do elemento &lt;body&gt;</p>
 </body>
 </html>
